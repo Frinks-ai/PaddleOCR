@@ -61,8 +61,9 @@ from ppocr.utils.network import (
     is_link,
     confirm_model_dir_url,
 )
-from tools.infer import predict_system
-from tools.infer.utility import draw_ocr, str2bool, check_gpu
+
+from paddleocr.tools.infer import predict_system
+from paddleocr.tools.infer.utility import draw_ocr, str2bool, check_gpu
 from ppstructure.utility import init_args, draw_structure_result
 from ppstructure.predict_system import StructureSystem, save_structure_res, to_excel
 from ppstructure.recovery.recovery_to_doc import sorted_layout_boxes, convert_info_docx
